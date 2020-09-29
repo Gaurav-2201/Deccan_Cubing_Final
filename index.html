@@ -5,12 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script>
     function myFunction(imgs) {
       var expandImg = document.getElementById("expandedImg");
@@ -20,6 +23,7 @@
       expandImg.parentElement.style.display = "block";
     }
     </script>
+    
     
         <!-- <link rel="stylesheet" href=
 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -47,14 +51,16 @@ crossorigin="anonymous"></script>
             background-color: indianred;
         }
          .navbar {
-            top: 0;
-            position: relative;
+            position: sticky;
+            position:-webkit-sticky;
+            top: 0px;
             overflow: hidden;
             background-color:transparent;
             color: black;
             text-align: center;
             border: none;
             border-bottom: none;
+            z-index: 20;
             
         }
         
@@ -122,7 +128,7 @@ crossorigin="anonymous"></script>
         }
         nav ul li{
             display: inline;
-            margin: 5px;
+            margin: 10px;
         }
         .li a{
             display: block;
@@ -161,6 +167,10 @@ crossorigin="anonymous"></script>
         .form{
             padding: 5px;
         }
+        .form1{
+            padding: 5px;
+            font-size: 20px;
+        }
         .button{
             background-color: white;
             color: black;
@@ -176,12 +186,10 @@ crossorigin="anonymous"></script>
             margin-right:45px
         }
         .insta{
-            text-align: right;
-            float: right;
+            text-align: center
         }
         .fb{
-            text-align: right;
-            float: right;
+            text-align: center;
         }
         table.center{
             padding: 5px;
@@ -268,13 +276,57 @@ crossorigin="anonymous"></script>
             font-size: 24px;
             font-family: sans-serif;
         }
+        a.FB{
+            margin: 0 15px 0 0;
+            color: purple;
+        }
+        a.INSTAGRAM{
+            margin: 0 15px 0 0;
+            color: red;
+        }
+        .logo-image{
+            width: 45px;
+            height: 40px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-top: -8px;
+        }
+        .logo-image:hover{
+            background-color: black;
+        }
+        a.fb{
+            margin: 0 15px 0 0;
+            color:purple
+        }
+        a.insta{
+            margin: 0 15px 0 0;
+            color: red;
+        }
+        a.mail{
+            margin: 0 15px 0 0;
+            color: black;
+        }
+        .context1{
+            color:red
+        }
+        .team_context{
+            color:magenta
+        }
+        ul.history{
+            font-size: 20px;
+            font-family: monospace;
+        }
+        ul.services{
+            font-size: 20px;
+            font-family: monospace;
+        }
         
     </style>
     <body>
         <div class="jumbotron text-centre" style="margin-bottom: 0px; text-align: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrALCeIejMG27eP7wFgQJzcYYKcNYR13mLvA&usqp=CAU); background-size: cover;" >
             <h1 style="font-size: 60px;">DECCAN CUBING</h1>
-            <h4>A Non Profit Organization</h4>
-        <marquee>Welcome to the Home Page of <b>Deccan Cubing Organization!!!</b></marquee> 
+            <h4>A Non Profit Organisation</h4>
+        <marquee>Welcome to the Home Page of <b>Deccan Cubing Organisation!!!</b></marquee> 
         <nav class="navbar navbar-expand-md bg-warning navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -282,6 +334,11 @@ crossorigin="anonymous"></script>
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="nav nav-tabs">
+                        <a class="navbar-brand" href="">
+                            <div class="logo-image">
+                                  <img src="https://scontent-ort2-1.cdninstagram.com/v/t51.2885-19/26871426_1919493371700735_5603063353376243712_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com&_nc_ohc=YqOzRs13oksAX_ri4ti&oh=5acbfeb52c6f01dfbd5f61f42c4046d6&oe=5F9DDD55" class="img-fluid">
+                            </div>
+                        </a>
                         <li class="nav-item active">
                             <a class="nav-link" data-toggle="tab" href="#HOME"><span class="glyphicon glyphicon-home "></span> HOME </a>
                         </li>
@@ -289,22 +346,31 @@ crossorigin="anonymous"></script>
                             <a class="nav-link" data-toggle="tab" href="#CUBING"><span class="glyphicon glyphicon-th"></span> WHAT IS CUBING? </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ABOUT"><span class="glyphicon glyphicon-th-large"></span> ABOUT US </a>
+                            <a class="nav-link" data-toggle="tab" href="#ABOUT"><i class="fa fa-question" style="font-size:15px"></i> WHO ARE WE </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#COMPS"><span class="glyphicon glyphicon-calendar"></span> LIST OF COMPETITIONS! </a>
+                            <a class="nav-link" data-toggle="tab" href="#SERVICES"><i class="fa fa-handshake-o" style="font-size:15px"></i> SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#CORE"><span class="glyphicon glyphicon-user"></span> OUR CORE TEAM </a>
+                            <a class="nav-link" data-toggle="tab" href="#HISTORY"><span class="glyphicon glyphicon-calendar"></span> OUR HISTORY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#SR"><span class="glyphicon glyphicon-time"></span> STATE RECORDS</a>
+                            <a class="nav-link" data-toggle="tab" href="#CORE"><span class="glyphicon glyphicon-user"></span> OUR TEAM </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#COMPS"><span class="glyphicon glyphicon-time"></span> LIST OF COMPETITIONS! </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#SR"><i class='fas fa-trophy' style='font-size:15px'></i> STATE RECORDS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#GALLERY"><span class="glyphicon glyphicon-picture"></span> GALLERY</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#JOINUS"><span class="glyphicon glyphicon-pencil"></span> JOIN US!!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#CONTACT"><i class="fa fa-phone " style="font-size:15px"></i>GET IN TOUCH</a>
                         </li>
                     </ul>
                 </div>
@@ -318,9 +384,13 @@ crossorigin="anonymous"></script>
                             <div class="col-sm-12">
                                 <h1 class="headsp">HOME</h1><br>
                                 <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t31.0-8/17505225_1289679464443257_4202277688120495049_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=gpyML-IZhDoAX_b-fDm&_nc_ht=scontent.fhyd2-1.fna&oh=b291e217f41b023f5371b2ac3ce4f0be&oe=5F9124A4" style="max-width: 100%; height: 300px;"><br>
-                                <p class="context"><br>Hello! Welcome to Deccan Cubing's Page! You might be wondering what exactly is Deccan Cubing? 
-                                Deccan Cubing is a community which strives in devoloping speedcubing in Hyderabad and South India. All details of official and unofficial competitions organized by our team would be shared here!
-                                With the support of our team members and all the awesome cubers across India, we hope that we will make speedcubing more popular and competitive!
+                                <h2> ABOUT US</h2>
+                                <p class="context"><br>Welcome to Deccan Cubing, a community helping in developing speedcubing in Hyderabad and 
+                                    South India. We shall share all the details and updates regarding WCA competitions especially in Hyderabad.
+                                     Tips to develop your skills from Cubing to organising official competitions
+                                     as well as unofficial competitions in south India!! With the support of our
+                                      members and all awesome cubers from Hyderabad and across India, we hope that
+                                       we will make a great show always and make a good mark in India .
                                 </p>
                             </div>
                         </div>
@@ -372,7 +442,7 @@ crossorigin="anonymous"></script>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="headp" id="ABOUT">ABOUT US</h1>
+                            <h1 class="headp" id="ABOUT">WHO ARE WE?</h1>
                             <div id="myCarouse2" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
@@ -404,161 +474,151 @@ crossorigin="anonymous"></script>
                                 </a>
                                 </div>
 
-                            <p class="context"><br>Deccan Cubing was found in 2017 by the delegate of Hyderabad, Akula Pavan Kumar along with his friend Murali Krishna! The first official cubing competition by Deccan Cubing team was organized in August 2017! Since then Deccan Cubing has organized 12 official WCA Competitions! </p>
+                            <p class="context"><br>We are a bunch of Enthusiastic Cubers from Hyderabad with different backgrounds, age groups and professions joined together with a common agenda of promoting speedcubing across Hyderabad and India which led to the formation of Deccan Cubing.
+                                So we are creating a dedicated online platform for speedcubing competitions, to develop cubing activities such as Organising, Training, providing support to organisers and promote cube competitions in Hyderabad and India.<br>
+                                <p style="color: black;">JOIN US to become an effective Organiser.(Click the "JOIN US" tab for the form!)></a>
+                                 </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="COMPS">
+            <div class="tab-pane fade" id="SERVICES">
                 <div class="container-fluid">
-                    <h1 class="headp">List of Competitions Organized!</h1>
+                    <h1 class="headp">OUR SERVICES</h1>
                     <div class="row">
                         <div class="col-sm-12">
-                            <table class=complist style="border: none;">
-                                <ul class="comps" style="list-style-type: none;">
-                                    <tr>
-                                        <td>
-                                            <l1 class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccancubeOpenAugust2017" target="_blank">Deccan Cube Open - August 2017</a>
-                                            </l1>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2018"target="_blank">Hyderabad Cube Open - 2018</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/KKCharityCubeOpen2018"target="_blank">KK Charity Cube Open - 2018</a>
-                                            </li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccanCubeOpenSeptember2017 "target="_blank">Deccan Cube Open - September 2017</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/VarshaRituCubeOpen2018"target="_blank">Varsha Ritu Cube Open - 2018</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliCubeOpen2019"target="_blank">Geethanjali Cube Open - 2019</a>
-                                            </li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2017"target="_blank">Cubing Atmosphere - 2017</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliMonsoonOpen2018"target="_blank">Geethanjali Monsoon Open - 2018</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2019"target="_blank">Hyderabad Cube Open - 2019</a>
-                                            </li>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjalicOpen2018"target="_blank">Geethanjali Cube Open - 2018</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2018"target="_blank">Cubing Atmosphere - 2018</a>
-                                            </li>
-                                        </td>
-                                        <td>
-                                            <li class="comp">
-                                                <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2019"target="_blank">Cubing Atmosphere - 2019</a>
-                                            </li>
-                                        </td>
-                                    </tr>
-                                </ul>
-                            </table>
+                            <ul class="services" style="list-style-type: none;">
+                                <li class="service"><b>Workshops:</b> To learn cubing with anyone and everyone.</li>
+                                <li class="service"><b>Competitions:</b> Organising Official Competitions.</li>
+                                <li class="service"><b>Equipments:</b> Providing equipments.</li>
+                                <li class="service"><b>Tutorials:</b> how to learn cubing , becoming an effective speedcuber.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-                    <!-- <div class="row">
-                        <div class="col-sm-4">
-                        <ul class="comps">
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccancubeOpenAugust2017" target="_blank">Deccan Cube Open - August 2017</a>
-                            </li>
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccanCubeOpenSeptember2017 "target="_blank">Deccan Cube Open - September 2017</a>
-                            </li>
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2017"target="_blank">Cubing Atmosphere - 2017</a>
-                            </li>
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjalicOpen2018"target="_blank">Geethanjali Cube Open - 2018</a>
-                            </li>
-                        </ul>
+            <div class="tab-pane fade" id="HISTORY">
+                <div class="container-fluid">
+                    <h1 class="headp">HISTORY</h1>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="history" style="list-style-type: none;">
+                                <li class="history"><b>April 2<sup>nd</sup> 2017 :</b> Started working on forming a group to organize competitions</li>
+                                <li class="history"><b>April 16<sup>th</sup> 2017 :</b> Curtain Raiser of deccan cubing logo and<br> launched Deccan cubing  officially across social platforms.</li>
+                                <li class="history"><b>July 15<sup>th</sup> 2017 :</b> Cube meet for the first official competition.</li>
+                                <li class="history"><b>August 13<sup>th</sup> 2017 :</b> Successively organized first official Competition.</li>
+                            </ul>
+                        </div>
                     </div>
-                        <div class="col-sm-4">
-                            <ul class="comps" style="list-style-type: none;">
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2018"target="_blank">Hyderabad Cube Open - 2018</a>
-                            </li>
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/VarshaRituCubeOpen2018"target="_blank">Varsha Ritu Cube Open - 2018</a>
-                            </li>
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliMonsoonOpen2018"target="_blank">Geethanjali Monsoon Open - 2018</a>
-                            </li>
-                            <li class="comp">
-                                <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2018"target="_blank">Cubing Atmosphere - 2018</a>
-                            </li>
-                        </ul>
-                    </div>
-                        
-                        <div class="col-sm-4">
-                            <ul class="comps" style="list-style-type: none;">
-                        <li class="comp">
-                            <a class="link" href="https://www.worldcubeassociation.org/competitions/KKCharityCubeOpen2018"target="_blank">KK Charity Cube Open - 2018</a>
-                        </li>
-                        <li class="comp">
-                            <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliCubeOpen2019"target="_blank">Geethanjali Cube Open - 2019</a>
-                        </li>
-                        <li class="comp">
-                            <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2019"target="_blank">Hyderabad Cube Open - 2019</a>
-                        </li>
-                        <li class="comp">
-                            <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2019"target="_blank">Cubing Atmosphere - 2019</a>
-                        </li>
-                    </ul>
                 </div>
-                </ul> -->
-            <!-- </div></div></div> -->
-            <div id="CORE" class="tab-pane fade">
+            </div>
+            <div class="tab-pane fade" id="CORE">
                 <div id="container-fluid">
-                    <h1 class="headp">CORE TEAM</h1>
+                    <h1 class="headp">OUR TEAM</h1>
+                    <h2 id="heads">CORE</h2><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/96239741_3190357670977003_8922135271370129408_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=efa8Ij8-6pYAX8hP3Oi&_nc_ht=scontent.fhyd2-1.fna&oh=c5023519395b0fb1285ec4c9b05e94c7&oe=5F925C22" style="height: 300px; max-width:100%;">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">AKULA PAVAN KUMAR</h2>
+                            <p class="team_context" ">Designation : Founder, Delegate</p><br>
+                            <a class="FB" href="https://www.facebook.com/speedcuberpavan" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <a class="INSTAGRAM" href="https://www.instagram.com/pavan_kumar__aakula/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2011KUMA01" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/1981956_1013962015291930_3848042835836521925_n.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=Rj3DOzRSwaEAX9yXvzV&_nc_oc=AQne-dDKp2tF64jb19QqWV6srS-5BgWEe8A99jxeCIPvAbHCOZhxz79Qg-0MN1h9Ewo&_nc_ht=scontent.fhyd2-1.fna&oh=56444ab4a7ad63cae69766fafae46651&oe=5F91C4E7" style="height: 300px; max-width: 100%">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">MURALI KRISHNA</h2>
+                            <p class="team_context">Designation : Co-Founder, Chief Strategist</p><br>
+                            <a class="FB" href="https://www.facebook.com/muralikrishna28" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <!-- <a class="INSTAGRAM" href="" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a> -->
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2012KRIS04" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/34342293_2236138016404086_2518228699619262464_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=aHl3pF1JJEoAX_--CFF&_nc_ht=scontent.fhyd2-1.fna&oh=44b5d9ea6297935a773aec3f79d1e318&oe=5F932EAC" style="height: 300px; max-width: 100%;">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">AKULA SAI KUMAR</h2>
+                            <p class="team_context">Designation : Co-Founder, Event Manager</p><br>
+                            <a class="FB" href="https://www.facebook.com/speedcubersai" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <a class="INSTAGRAM" href="https://www.instagram.com/speedcubersai/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2012KUMA02" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/70986106_2412852858792573_4880687581181771776_o.jpg?_nc_cat=102&_nc_sid=cdbe9c&_nc_ohc=_vkcZ3xh97sAX_bjJ1f&_nc_ht=scontent.fhyd2-1.fna&oh=df2a416a5d36348b0254657b40db58d3&oe=5F912057" style="height: 400px; max-width: 100%;">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">ABHISHEK SATHYANARAYANAN</h2>
+                            <p class="team_context">Designation : Scrambling Head</p><br>
+                            <a class="FB" href="https://www.facebook.com/abhishek.sathyanarayan" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <a class="INSTAGRAM" href="https://www.instagram.com/lord_shiva99/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2012SATH01" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71005524_2412850662126126_7893452889870303232_o.jpg?_nc_cat=103&_nc_sid=cdbe9c&_nc_ohc=Um_O_KbHfy0AX8avkEK&_nc_ht=scontent.fhyd2-1.fna&oh=9320e0808a8d0b963e5fd6989b9e4853&oe=5F943E67" style="max-width: 100%; height: 300px;">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">GAURAV BACHANI</h2>
+                            <p class="team_context">Designation : Volunteering Head</p><br>
+                            <a class="FB" href="https://www.facebook.com/profile.php?id=100008115974363" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <a class="INSTAGRAM" href="https://www.instagram.com/gauravbachani/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2017BACH09" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t31.0-8/13130882_234224023634467_7639022802208074082_o.jpg?_nc_cat=104&_nc_sid=174925&_nc_ohc=ea-CDaCP78oAX9bZs9O&_nc_ht=scontent.fhyd2-1.fna&oh=b160158c29b2f441091c2b5366317a0f&oe=5F9241CD" style="max-width: 100%; height: 300px;">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">KILAMBI SATVIK</h2>
+                            <p class="team_context">Designation : Volunteering Head</p><br>
+                            <a class="FB" href="https://www.facebook.com/SatvikKilambi" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <a class="INSTAGRAM" href="https://www.instagram.com/kivtas17/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2015SATV01" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71249621_2412818918795967_1248056761085067264_o.jpg?_nc_cat=110&_nc_sid=cdbe9c&_nc_ohc=ThcShybAQkoAX88UgKO&_nc_ht=scontent.fhyd2-1.fna&oh=1084826865d696d7400ca7c3fff2dad7&oe=5F93C8A4" style="max-width: 100%; height: 400px;">
+                        </div>
+                        <div class="col-sm-6" style="margin: auto;">
+                            <h2 id="CORE_data">ANIRUDH PULAVARTHY</h2>
+                            <p class="team_context">Designation : Technical Head</p><br>
+                            <a class="FB" href="https://www.facebook.com/itzanirudh"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                            <a class="INSTAGRAM" href="https://www.instagram.com/anirudh.pulavarthy/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                            <a class="WCA" href="https://www.worldcubeassociation.org/persons/2014PULA01" target="_blank"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="CORE" class="tab-pane fade">
+                <div id="container-fluid">
+                    <h1 class="headp">OUR TEAM</h1>
                     <h2 id="heads">CO-FOUNDERS</h2>
                     <div class="row">
                         <div class="col-sm-4">
                             <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/96239741_3190357670977003_8922135271370129408_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=efa8Ij8-6pYAX8hP3Oi&_nc_ht=scontent.fhyd2-1.fna&oh=c5023519395b0fb1285ec4c9b05e94c7&oe=5F925C22" style="height: 300px; max-width:100%;">
                             <h2 id="CORE_data" style="font-size: 28px;">AKULA PAVAN KUMAR</h2>
                             <a class="WCA" href="https://www.worldcubeassociation.org/persons/2011KUMA01"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
-                            <p class="context"><br>Pavan is one of the co-founders of Deccan Cubing Organization and also is one of the seven delegates of India! He has been in this cubing community for over 10 years now and always makes sure that all rules are abided during the competition. He guides the other team members to make sure there is no confusion and the competition is organized smoothly!</p>
+                            <p class="context"><br>Pavan is one of the co-founders of Deccan Cubing Organisation and also is one of the seven delegates of India! He has been in this cubing community for over 10 years now and always makes sure that all rules are abided during the competition. He guides the other team members to make sure there is no confusion and the competition is Organised smoothly!</p>
 
                         </div>
                         <div class="col-sm-4">
                             <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/1981956_1013962015291930_3848042835836521925_n.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=Rj3DOzRSwaEAX9yXvzV&_nc_oc=AQne-dDKp2tF64jb19QqWV6srS-5BgWEe8A99jxeCIPvAbHCOZhxz79Qg-0MN1h9Ewo&_nc_ht=scontent.fhyd2-1.fna&oh=56444ab4a7ad63cae69766fafae46651&oe=5F91C4E7" style="height: 300px; max-width: 100%">
                             <h2 id="CORE_data"> MURALI KRISHNA</h2>
                             <a class="WCA" href="https://www.worldcubeassociation.org/persons/2012KRIS04"><b>WCA ID<span class="glyphicon glyphicon-link"></span></b></a>
-                            <p class="context"><br>Murali is the 2nd co-founder of this organization. He has been attending official competitions since 2012! He usually is the one who finalizes the venues for our competitions and clears queries of participants and parents at the competition. He also takes care of the registrations which are done before the competition!</p>
+                            <p class="context"><br>Murali is the 2nd co-founder of this Organisation. He has been attending official competitions since 2012! He usually is the one who finalizes the venues for our competitions and clears queries of participants and parents at the competition. He also takes care of the registrations which are done before the competition!</p>
                         
                         </div>
                         <div class="col-sm-4">
@@ -603,7 +663,140 @@ crossorigin="anonymous"></script>
                                 <p class="context"><br>The newest member of our core team Anirudh, takes care of all the data entry of results at the competition making sure all the times are entered correctly in the database, communicates with sponsors of the event and takes care of all the emails which are to be sent to the competitiors before and after the competition!</p>
                             </div>
                     </div>
-                </div></div></div></div></div>
+                </div></div></div></div></div> -->
+                <div class="tab-pane fade" id="COMPS">
+                    <div class="container-fluid">
+                        <h1 class="headp">List of Competitions Organised!</h1>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="complist" style="border: none;">
+                                    <ul class="comps" style="list-style-type: none;">
+                                        <tr>
+                                            <td>
+                                                <l1 class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccancubeOpenAugust2017" target="_blank">Deccan Cube Open - August 2017</a>
+                                                </l1>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2018"target="_blank">Hyderabad Cube Open - 2018</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/KKCharityCubeOpen2018"target="_blank">KK Charity Cube Open - 2018</a>
+                                                </li>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccanCubeOpenSeptember2017 "target="_blank">Deccan Cube Open - September 2017</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/VarshaRituCubeOpen2018"target="_blank">Varsha Ritu Cube Open - 2018</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliCubeOpen2019"target="_blank">Geethanjali Cube Open - 2019</a>
+                                                </li>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2017"target="_blank">Cubing Atmosphere - 2017</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliMonsoonOpen2018"target="_blank">Geethanjali Monsoon Open - 2018</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2019"target="_blank">Hyderabad Cube Open - 2019</a>
+                                                </li>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjalicOpen2018"target="_blank">Geethanjali Cube Open - 2018</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2018"target="_blank">Cubing Atmosphere - 2018</a>
+                                                </li>
+                                            </td>
+                                            <td>
+                                                <li class="comp">
+                                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2019"target="_blank">Cubing Atmosphere - 2019</a>
+                                                </li>
+                                            </td>
+                                        </tr>
+                                    </ul>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <!-- <div class="row">
+                            <div class="col-sm-4">
+                            <ul class="comps">
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccancubeOpenAugust2017" target="_blank">Deccan Cube Open - August 2017</a>
+                                </li>
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/DeccanCubeOpenSeptember2017 "target="_blank">Deccan Cube Open - September 2017</a>
+                                </li>
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2017"target="_blank">Cubing Atmosphere - 2017</a>
+                                </li>
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjalicOpen2018"target="_blank">Geethanjali Cube Open - 2018</a>
+                                </li>
+                            </ul>
+                        </div>
+                            <div class="col-sm-4">
+                                <ul class="comps" style="list-style-type: none;">
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2018"target="_blank">Hyderabad Cube Open - 2018</a>
+                                </li>
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/VarshaRituCubeOpen2018"target="_blank">Varsha Ritu Cube Open - 2018</a>
+                                </li>
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliMonsoonOpen2018"target="_blank">Geethanjali Monsoon Open - 2018</a>
+                                </li>
+                                <li class="comp">
+                                    <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2018"target="_blank">Cubing Atmosphere - 2018</a>
+                                </li>
+                            </ul>
+                        </div>
+                            
+                            <div class="col-sm-4">
+                                <ul class="comps" style="list-style-type: none;">
+                            <li class="comp">
+                                <a class="link" href="https://www.worldcubeassociation.org/competitions/KKCharityCubeOpen2018"target="_blank">KK Charity Cube Open - 2018</a>
+                            </li>
+                            <li class="comp">
+                                <a class="link" href="https://www.worldcubeassociation.org/competitions/GeethanjaliCubeOpen2019"target="_blank">Geethanjali Cube Open - 2019</a>
+                            </li>
+                            <li class="comp">
+                                <a class="link" href="https://www.worldcubeassociation.org/competitions/HyderabadCubeOpen2019"target="_blank">Hyderabad Cube Open - 2019</a>
+                            </li>
+                            <li class="comp">
+                                <a class="link" href="https://www.worldcubeassociation.org/competitions/CubingATMOSphere2019"target="_blank">Cubing Atmosphere - 2019</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </ul> -->
+                <!-- </div></div></div> -->
                 <div class="tab-pane fade" id="SR">
                     <div class="container-fluid">
                         <h3>Here's a list of <b>STATE RECORDS</b> of Hyderabad.<br> This list consists of all the people who have the fastest single and average in a particular event! </h3>
@@ -805,44 +998,44 @@ crossorigin="anonymous"></script>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/64323540_130882861494820_6305738342512197632_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=KrV_o7dxeQ8AX8LTKp2&_nc_ht=scontent.fhyd2-1.fna&oh=edcaba2cde3cb56a8779391ba166a65d&oe=5F96B9E3" alt="Akshaansh Chilakapati" style="max-width:100%; height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/64323540_130882861494820_6305738342512197632_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=KrV_o7dxeQ8AX8LTKp2&_nc_ht=scontent.fhyd2-1.fna&oh=edcaba2cde3cb56a8779391ba166a65d&oe=5F96B9E3" alt="Akshaansh Chilakapati" style="max-width:100%; height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71796121_2412846845459841_769756640223166464_o.jpg?_nc_cat=100&_nc_sid=cdbe9c&_nc_ohc=RibE5Ogl_K4AX_TWxcm&_nc_ht=scontent.fhyd2-1.fna&oh=c699dabc7a709aece85a3e975e43e070&oe=5F953CA7" alt="Akula Pavan Kumar" style="max-width:100%; height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71796121_2412846845459841_769756640223166464_o.jpg?_nc_cat=100&_nc_sid=cdbe9c&_nc_ohc=RibE5Ogl_K4AX_TWxcm&_nc_ht=scontent.fhyd2-1.fna&oh=c699dabc7a709aece85a3e975e43e070&oe=5F953CA7" alt="Akula Pavan Kumar" style="max-width:100%; height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2016SHEL02/1570572405.jpg" alt="Harsh Arvind Shelwatkar" style="max-width:100%;height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2016SHEL02/1570572405.jpg" alt="Harsh Arvind Shelwatkar" style="max-width:100%;height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71243195_2412833408794518_989211305632071680_o.jpg?_nc_cat=111&_nc_sid=cdbe9c&_nc_ohc=Qg9HwhSSt1cAX9FBeWw&_nc_ht=scontent.fhyd2-1.fna&oh=faf615fecacda138d7eabbf83fd517c7&oe=5F974618" alt="Madhav Singh" style="max-width:100%;height: 20vh;;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71243195_2412833408794518_989211305632071680_o.jpg?_nc_cat=111&_nc_sid=cdbe9c&_nc_ohc=Qg9HwhSSt1cAX9FBeWw&_nc_ht=scontent.fhyd2-1.fna&oh=faf615fecacda138d7eabbf83fd517c7&oe=5F974618" alt="Madhav Singh" style="max-width:100%;height: 15vh;;" onclick="myFunction(this);">
                             </div>   
                         </div>
                         <div class="row">
                             <div class="column">
-                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2012SATH01/1548420509.JPG" alt="Abhishek Sathyanarayanan" style="max-width:100%; height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2012SATH01/1548420509.JPG" alt="Abhishek Sathyanarayanan" style="max-width:100%; height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/79242842_2622961777800662_1864197633904476160_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=vKn6coRi6l4AX-DzBtB&_nc_ht=scontent.fhyd2-1.fna&oh=b07321a366f3f4c7b5af1115ea09315e&oe=5F96CB02" alt="Dattatreya Chodavarapu" style="max-width:100%; height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/79242842_2622961777800662_1864197633904476160_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=vKn6coRi6l4AX-DzBtB&_nc_ht=scontent.fhyd2-1.fna&oh=b07321a366f3f4c7b5af1115ea09315e&oe=5F96CB02" alt="Dattatreya Chodavarapu" style="max-width:100%; height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71005524_2412850662126126_7893452889870303232_o.jpg?_nc_cat=103&_nc_sid=cdbe9c&_nc_ohc=Jwf8CM7T5V0AX8BS0EW&_nc_ht=scontent.fhyd2-1.fna&oh=b61733d031e0a6d9c769fa9d3b77005c&oe=5F9832E7" alt="Gaurav Bachani" style="max-width:100%;height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71005524_2412850662126126_7893452889870303232_o.jpg?_nc_cat=103&_nc_sid=cdbe9c&_nc_ohc=Jwf8CM7T5V0AX8BS0EW&_nc_ht=scontent.fhyd2-1.fna&oh=b61733d031e0a6d9c769fa9d3b77005c&oe=5F9832E7" alt="Gaurav Bachani" style="max-width:100%;height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71585747_2412861382125054_845018623461294080_o.jpg?_nc_cat=101&_nc_sid=cdbe9c&_nc_ohc=akNADTvhXDsAX-_Kmqp&_nc_ht=scontent.fhyd2-1.fna&oh=e32c9a5cbdee7e473593f0acdd818ab6&oe=5F97D300" alt="Ritwik Patnaik" style="max-width:100%;height: 20vh;;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71585747_2412861382125054_845018623461294080_o.jpg?_nc_cat=101&_nc_sid=cdbe9c&_nc_ohc=akNADTvhXDsAX-_Kmqp&_nc_ht=scontent.fhyd2-1.fna&oh=e32c9a5cbdee7e473593f0acdd818ab6&oe=5F97D300" alt="Ritwik Patnaik" style="max-width:100%;height: 15vh;;" onclick="myFunction(this);">
                             </div>   
                         </div>
                         <div class="row">
                             <div class="column">
-                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2014VURE01/1539064450.jpg" alt="Sai Ashish Vure" style="max-width:100%; height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2014VURE01/1539064450.jpg" alt="Sai Ashish Vure" style="max-width:100%; height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2016SRIP01/1540992919.jpg" alt="Krishna Advait Sripada" style="max-width:100%; height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2016SRIP01/1540992919.jpg" alt="Krishna Advait Sripada" style="max-width:100%; height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71134143_2412826722128520_7074201355765678080_o.jpg?_nc_cat=111&_nc_sid=cdbe9c&_nc_ohc=_M0XI2jxJJEAX_S3yDn&_nc_ht=scontent.fhyd2-1.fna&oh=be67ee0d8fd79409d75f0a220fddd693&oe=5F96E0EB" alt="Tejas Parse" style="max-width:100%;height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/71134143_2412826722128520_7074201355765678080_o.jpg?_nc_cat=111&_nc_sid=cdbe9c&_nc_ohc=_M0XI2jxJJEAX_S3yDn&_nc_ht=scontent.fhyd2-1.fna&oh=be67ee0d8fd79409d75f0a220fddd693&oe=5F96E0EB" alt="Tejas Parse" style="max-width:100%;height: 15vh;" onclick="myFunction(this);">
                             </div>
                             <div class="column">
-                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2018JAIN01/1569981442.jpg" alt="Tegan Jain" style="max-width:100%;height: 20vh;" onclick="myFunction(this);">
+                                <img src="https://www.worldcubeassociation.org/uploads/user/avatar/2018JAIN01/1569981442.jpg" alt="Tegan Jain" style="max-width:100%;height: 15vh;" onclick="myFunction(this);">
                             </div>   
                         </div>
                         <div class="container">
@@ -856,7 +1049,7 @@ crossorigin="anonymous"></script>
                 <div class="tab-pane fade" id="JOINUS">
                     <div class="container-fluid">
                         <h1 class="headp">JOIN OUR TEAM!</h1>
-                        <p> If anyone is interested in joining our team and wants to help us in organizing competitions and contributing to the speedcubing community, Please fill this form!</p>
+                        <p> If anyone is interested in joining our team and wants to help us in Organising competitions and contributing to the speedcubing community, Please fill this form!</p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <form>
@@ -870,7 +1063,7 @@ crossorigin="anonymous"></script>
                                     <label for="WCAID">WCA ID(if available)</label><br>
                                     <input type="text" id="WCAID"><br></div>
                                     <div class="form">
-                                    <label for="organize">Have you ever been a part of an Organization Team  before?</label><br>
+                                    <label for="Organise">Have you ever been a part of an Organisation Team  before?</label><br>
                                     <select name="y/n" id="y/n" class="dropdown">
                                         <option value="" disabled selected>Select Yes/No</option>
                                         <option value="Yes">Yes</option>
@@ -893,12 +1086,53 @@ crossorigin="anonymous"></script>
                         <input type="button" value="SUBMIT" class="button">
                     </div>
                 </div>
+                <div class="tab-pane fade" id="CONTACT">
+                    <div class="container-fluid">
+                        <h1 class="headp">GET IN TOUCH</h1>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="context1">For any query/suggestion related to organising competition and workshop<br>
+                                    Contact us from the information given below or you can fill the form </p><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form>
+                                    <div class=form1>
+                                        <label for="name1">Name:</label><br>
+                                        <input type="text" id="name1"><br>
+                                    </div>
+                                    <div class="form1">
+                                        <label for="email1">Email:</label><br>
+                                        <input type="email" id="email1"><br>
+                                    </div>
+                                    <div class="form1">
+                                        <label for="Query_Type">What is your query about?</label><br>
+                                        <select name="query" id="query" class="dropdown">
+                                            <option value="" disabled selected>Select One Option</option>
+                                            <option value="Organise_comp">Competition Organising</option>
+                                            <option value="workshop">Workshop Related</option>
+                                            <option value="Suggest">Give a suggestion</option>
+                                            <option value="Others">Others</option>
+                                        </select><br>
+                                    </div>
+                                    <div class="form1">
+                                        <label for="text-area">Please write your query/suggestion here!</label><br>
+                                        <textarea name="ans1" rows="10" cols="30"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><br>
+                        <input type="button" value="SUBMIT" class="button"><br><br><br>
+                        <a class="mail" href="mailto:deccancubing@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:40px"></i></a>
+                        <a class="fb" href="https://www.facebook.com/DeccanCubing " target="_blank"><i class="fab fa-facebook-f" style="font-size:40px;"></i></a>
+                        <a class="insta" href="https://www.instagram.com/deccancubing/?hl=en " target="_blank"><i class="fab fa-instagram" style="font-size:40px"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
     <footer class="foot">
         <p class="contextf"><b><span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2020 DECCAN CUBING. All rights reserved</b></p><br>
-        <a class="insta" href="https://www.instagram.com/deccancubing/?hl=en " target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/599px-Instagram_icon.png" style="width: 35px; height: 35px;"></a>
-        <a class="fb" href="https://www.facebook.com/DeccanCubing " target="_blank"><img src="https://i.pinimg.com/736x/ac/57/3b/ac573b439cde3dec8ca1c6739ae7f628.jpg" style="height: 35px; width: 35px;"></a>
     </footer>
 </html>
