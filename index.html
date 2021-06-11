@@ -16,6 +16,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+  
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -48,6 +50,15 @@
             alert("Thank you for your message")
         }
     </script>
+    <script>
+        $(document).ready(function(){
+            $('#myselection').on('change', function(){
+                var demovalue = $(this).val(); 
+                $("div.myDiv").hide();
+                $("#show"+demovalue).show();
+            });
+        });
+        </script>
     
     
         <!-- <link rel="stylesheet" href=
@@ -71,12 +82,17 @@ crossorigin="anonymous"></script>
     </head>
     <style>
         html{
-            background-color: yellow;
+            background-color:yellow;
         }
         .body{
             text-align: center;
             font-size: 10vw;
             background-color: indianred;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        .jumbotron text-centre{
+            min-height: calc(100vh-50px);
         }
          .navbar {
             position: sticky;
@@ -264,6 +280,7 @@ crossorigin="anonymous"></script>
         .foot{
             background-color: yellow;
             position:static;
+            height:50px;
 
         }
         /* The grid: Four equal columns that floats next to each other */
@@ -365,7 +382,30 @@ crossorigin="anonymous"></script>
             font-size: 20px;
             font-family: monospace;
         }
-        
+        .myDiv{
+            display:none; 
+            text-align: center;
+        }
+        .myDiv img{
+            margin: 0 auto;
+            max-width:75%;
+            max-height: 450px;
+        }
+        .myDiv span{
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            background: lightgray;
+            padding:6px 10px;
+            display:block;
+            width:100%;
+            border:1px solid #d47c7c;
+            margin: 8px auto;
+        }
+        #myselection{
+            background-color: black;
+            color: gold;
+        }
     </style>
     <body>
         <div class="jumbotron text-centre" style="margin-bottom: 0px; text-align: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrALCeIejMG27eP7wFgQJzcYYKcNYR13mLvA&usqp=CAU); background-size: cover;" >
@@ -411,6 +451,9 @@ crossorigin="anonymous"></script>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#GALLERY"><span class="glyphicon glyphicon-picture"></span> GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#SEARCH"><span class="glyphicon glyphicon-search"></span> SEARCH</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#JOINUS"><span class="glyphicon glyphicon-pencil"></span> JOIN US!!</a>
@@ -1092,6 +1135,64 @@ crossorigin="anonymous"></script>
                         <p><br>More pics COMING SOON.....</p>                        
                     </div>
                 </div>
+                <div class="tab-pane fade" id="SEARCH">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="myselection">Select a name to display their image.</label>
+                                <select class="form-control" id="myselection">
+                                    <option value="" >Select Option</option>
+                                    <option value="AK">Akshaansh Chilakapati</option>
+                                    <option value="Pavan">Akula Pavan Kumar</option>
+                                    <option value="Harsh">Harsh Arvind Shelwatkar</option>
+                                    <option value="Madhav">Madhav Singh</option>
+                                    <option value="Abhishek">Abhishek Sathyanarayanan</option>
+                                    <option value="Dattu">Dattatreya Chodavarapu</option>
+                                    <option value="GB">Gaurav Bachani</option>
+                                    <option value="Ritwik">Ritwik Patnaik</option>
+                                    <option value="Ashish">Sai Ashish Vure</option>
+                                    <option value="Krishna">Krishna Advait Sripada</option>
+                                    <option value="Tejas">Tejas Parse</option>
+                                    <option value="Tegan">Tegan Jain</option>
+                                </select>
+                                </div></form>
+                        <div id="showAK" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1uULY41leCd-AS-AEXb3PsV5XX0w2J1pk" alt="Akshaansh Chilakapati" ><span>Akshaansh Chilakapati</span>
+                        </div>
+                        <div id="showPavan" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/14ATrtMrx1pjbAXo-Dhi1cijCNRr-D6OC" alt="Akula Pavan Kumar"><span>Akula Pavan Kumar</span>
+                        </div>
+                        <div id="showHarsh" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/17EeGcXIr1Fgq0rU-d1PJ6XmeCy-nbuzZ" alt="Harsh Arvind Shelwatkar"><span>Harsh Arvind Shelwatkar</span>
+                        </div>
+                        <div id="showMadhav" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1pm9HC6XbA0bf-VFusgQdprsG4ztdkYGF" alt="Madhav Singh"><span>Madhav Singh</span>
+                        </div>
+                        <div id="showAbhishek" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1fwyZD4UFKFcNBuhY8hXAyVz1pnKseYxN" alt="Abhishek Sathyanarayanan"><span>Abhishek Sathyanarayanan</span>
+                        </div>
+                        <div id="showDattu" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1cbT1i1IZ4Iz1rECa0OvvTlYm_t9wlId3" alt="Dattatreya Chodavarapu"><span>Dattatreya Chodavarapu</span>
+                        </div>
+                        <div id="showGB" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1yJgAKE_E9YDm9Bys0SNm1QP0OEbSplme" alt="Gaurav Bachani"><span>Gaurav Bachani</span>
+                        </div>
+                        <div id="showRitwik" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1RDuMdqmuDxBhzgExHTqvJkaNwauwpLi8" alt="Ritwik Patnaik"><span>Ritwik Patnaik</span>
+                        </div>
+                        <div id="showAshish" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/15oj3vuoLNKqGWeqjuMv3DrhjUh9_7Sqd" alt="Sai Ashish Vure"><span>Sai Ashish Vure</span>
+                        </div>
+                        <div id="showKrishna" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1bNzbOOogHr_YSdu6ze5pi8b-dStivNPo" alt="Krishna Advait Sripada"><span>Krishna Advait Sripada</span>
+                        </div>
+                        <div id="showTejas" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1HuvoC1nxYGStHnZkKYc1DrtFnOLvwa6e" alt="Tejas Parse"><span>Tejas Parse</span>
+                        </div>
+                        <div id="showTegan" class="myDiv">
+                            <img class="img-responsive" src="https://lh3.googleusercontent.com/d/1XBrI9Rt5CD1gaUST8xCX_3NV9R1DHZqT" alt="Tegan Jain"><span>Tegan Jain</span>
+                        </div></div>
+                </div>
                 <div class="tab-pane fade" id="JOINUS">
                     <form>    
                         <div class="container-fluid">
@@ -1173,7 +1274,7 @@ crossorigin="anonymous"></script>
                 </div>
                 
                 <footer class="foot">
-                    <p class="contextf"><b><span class="glyphicon glyphicon-copyright-mark"></span> <b></b>Copyright 2020 DECCAN CUBING. All rights reserved</b></p><br>
+                    <p class="contextf"><b><span class="glyphicon glyphicon-copyright-mark"></span> <b></b>Copyright 2021 DECCAN CUBING. All rights reserved</b></p><br>
                 </footer>
             </div>
         </div>
